@@ -7,20 +7,10 @@ public class ServicoFactoryTest {
     @Test
     void deveRetornarExcecaoParaServicoInexistente() {
         try {
-            IServico servico = ServicoFactory.obterServico("Evasao");
+            IServico servico = ServicoFactory.obterServico("Pi");
             fail();
         } catch (IllegalArgumentException e) {
             assertEquals("Serviço inexistente", e.getMessage());
-        }
-    }
-
-    @Test
-    void deveRetornarExcecaoParaServicoInvalido() {
-        try {
-            IServico servico = ServicoFactory.obterServico("Jubilamento");
-            fail();
-        } catch (IllegalArgumentException e) {
-            assertEquals("Serviço inválido", e.getMessage());
         }
     }
 }

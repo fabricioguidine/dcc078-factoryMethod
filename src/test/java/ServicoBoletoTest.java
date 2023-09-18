@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class ServicoBoletoTest {
     @Test
-    void deveExecutarPagamentoCartao() {
+    void deveExecutarPagamentoBoleto() {
         IServico servico = ServicoFactory.obterServico("Boleto");
         assertEquals("Pagamento por Boleto Bancário.", servico.executar());
     }

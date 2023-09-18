@@ -6,6 +6,6 @@ public class ServicoPix implements IServico {
     }
     @Override
     public String cancelar() {
-        return "Pagamento por Pix.";
+        return "Pagamento cancelado.";
     }
 }
